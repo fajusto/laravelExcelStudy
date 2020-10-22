@@ -48,8 +48,8 @@
                 </div>
             </div>
         </div>
-            <div class="relative col-10 m-auto">
-                <table class="table">
+            <div class="relative col-20 m-auto">
+                <table class="table" style="max-width:100%; white-space:nowrap;">
                     <thead class="thead-dark">
                         <tr>
                         <th scope="col">ID</th>
@@ -80,11 +80,11 @@
                             <th scope="row">{{$user->id}}</th>
                             <td>{{$user->name}}</td>
                             <td>{{$user->rg}}</td>
-                            <td>{{$user->cpf}}</td>
-                            <td>{{$user->born_date}}</td>
+                            <td class="block">{{$user->cpf}}</td>
+                            <td>{{$user->born_date->format('d/m/Y')}}</td>
                             <td>{{$user->work_place}}</td>
-                            <td>{{$user->hire_start}}</td>
-                            <td>{{$user->hire_end}}</td>
+                            <td>{{$user->hire_start->format('d/m/Y')}}</td>
+                            <td>{{$user->hire_end->format('d/m/Y')}}</td>
                             <td>{{$user->hire_status}}</td>
                             <td>{{$user->phone}}</td>
                             <td>{{$user->trading_name}}</td>
