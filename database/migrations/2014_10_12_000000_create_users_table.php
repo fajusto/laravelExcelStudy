@@ -15,13 +15,14 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('cpf', 14)->nullable();
             $table->string('rg',13)->nullable();
             $table->date('born_date')->nullable();
             $table->string('work_place')->nullable();
             $table->date('hire_start')->nullable();
             $table->date('hire_end')->nullable();
+            $table->string('hire_end_formula')->nullable();
             $table->string('hire_status', 20)->nullable();
             $table->string('phone')->nullable();
             $table->string('trading_name')->nullable();

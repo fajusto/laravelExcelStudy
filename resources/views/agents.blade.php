@@ -1,32 +1,30 @@
-<table class="table" style="max-width:100%; white-space:nowrap;">
-                    <thead class="thead-dark">
+<table>
+                    <thead>
                         <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">RG</th>
-                            <th scope="col">CPF</th>
-                            <th scope="col">Nascimento</th>
-                            <th scope="col">Local de Trabalho</th>
-                            <th scope="col">Início</th>
-                            <th scope="col">Vigencia Contrato</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Razão Social</th>
-                            <th scope="col">Endereço</th>
-                            <th scope="col">Bairro</th>
-                            <th scope="col">Cidade</th>
-                            <th scope="col">CEP</th>
-                            <th scope="col">CNPJ</th>
-                            <th scope="col">Status CNPJ</th>
-                            <th scope="col">Rescisão</th>
-                            <th scope="col">Nº CRECI</th>
-                            <th scope="col">Venci. CRECI</th>
+                            <th>Nome</th>
+                            <th>RG</th>
+                            <th>CPF</th>
+                            <th>Nascimento</th>
+                            <th>Local de Trabalho</th>
+                            <th>Início</th>
+                            <th>Vigência Contrato</th>
+                            <th>Status</th>
+                            <th>Telefone</th>
+                            <th>Razão Social</th>
+                            <th>Endereço</th>
+                            <th>Bairro</th>
+                            <th>Cidade</th>
+                            <th>CEP</th>
+                            <th>CNPJ</th>
+                            <th>Status CNPJ</th>
+                            <th>Rescisão</th>
+                            <th>Nº CRECI</th>
+                            <th>Venci. CRECI</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($users as $user)
                             <tr>
-                                <th scope="row">{{$user->id}}</th>
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->rg}}</td>
                                 <td>{{$user->cpf}}</td>

@@ -14,7 +14,6 @@ class FirstSheetImport implements WithHeadingRow, WithCalculatedFormulas, ToMode
 {
     public function model(array $row)
     {
-        //dd($row['nascimento']);
         if(!is_null($row['nome'])){
             return new User([
                 'name' => $row['nome'],
@@ -35,7 +34,7 @@ class FirstSheetImport implements WithHeadingRow, WithCalculatedFormulas, ToMode
                 'no_creci' => $row['no_creci'],
                 'creci_exp' => $row['venc_creci'],
                 'hire_end' => Carbon::instance(\PhpOffice\PhpSpreadsheet\Shared\Date:: excelToDateTimeObject($row['vigencia_contrato_aditivo']))
-            ]);
+                ]);
         }
     }
 }
