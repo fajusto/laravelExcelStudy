@@ -45,6 +45,8 @@
                         <br>
                         <button class="btn btn-success">Importar Corretores</button>
                     </form>
+                    <br>
+                    <a href="{{ url('export') }}" class="ml-4 text-sm text-gray-700 underline">Exportar Corretores</a>
                 </div>
             </div>
         </div>

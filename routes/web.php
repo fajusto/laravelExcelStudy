@@ -18,3 +18,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/import', [App\Http\Controllers\UsersController::class, 'import'])->name('import');
+Route::get('/export', [App\Http\Controllers\UsersController::class, 'export'])->name('export');
